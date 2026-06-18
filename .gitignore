@@ -1,0 +1,23 @@
+# platformio
+gnd_firmware/.pio/
+gnd_firmware/.pioenvs/
+gnd_firmware/.piolibdeps/
+gnd_firmware/.clang_complete
+gnd_firmware/.gcc-flags.json
+
+# vs code
+.vscode/
+
+# ros2
+gnd_ros2/build/
+gnd_ros2/install/
+gnd_ros2/log/
+
+# other
+*.pyc
+*.pyo
+__pycache__/
+
+# os
+.DS_Store
+Thumbs.db
