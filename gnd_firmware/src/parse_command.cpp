@@ -36,12 +36,12 @@ void writeMotor(MotorCommand input) {
   // set motor directions via IN1, IN2, IN3, IN4
   switch(leftSign) {
     case -1:
-      digitalWrite(IN1, LOW);
-      digitalWrite(IN2, HIGH);
-      break;
-    case 1:
       digitalWrite(IN1, HIGH);
       digitalWrite(IN2, LOW);
+      break;
+    case 1:
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, HIGH);
       break;
     default:
       // value of '0' will make the motor coast 
@@ -53,12 +53,12 @@ void writeMotor(MotorCommand input) {
 
   switch(rightSign) {
     case -1:
-      digitalWrite(IN3, LOW);
-      digitalWrite(IN4, HIGH);
-      break;
-    case 1:
       digitalWrite(IN3, HIGH);
       digitalWrite(IN4, LOW);
+      break;
+    case 1:
+      digitalWrite(IN3, LOW);
+      digitalWrite(IN4, HIGH);
       break;
     default:
       // value of '0' will stop the motors 
